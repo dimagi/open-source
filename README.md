@@ -34,6 +34,7 @@ Reviewing code is hard, and as the author of code you should try your best to ma
 - Break changes into logical commits with clear names as much as possible
 - Keep changes that refactor code in their own commits as much as possible, rather than mixed in with your functional changes
 - Tell your reviewer how best to review (commit-by-commit or all at once)
+- Tell your reviewer if some things are clearer with whitespace removed (can use github's [w=1](https://github.com/blog/967-github-secrets) flag)
 - Proactively comment with explanations of any changes you think might be hard to follow
 - Proactively comment on any design-decisions/tradeoffs made
 
