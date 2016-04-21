@@ -83,5 +83,5 @@ Some practical examples
   * Often for larger changes it is easier to review the changes one commit at a time rather then the entire change set. This allows the reviewer to better follow the flow of the change and also spearate related changes from unrelated change.
 * :office: : Pull request should be reviewed as a whole (not by commit).
   * This usually indicates that the author of the changes wasn't able to keep the changes logically separated into commits and that reviewing commit by commit won't be helpful (or that the change is small enough to not matter).
-* :white_check_mark: on :+1: : Good to merge once the build has passed
+* :+1: on :white_check_mark: : Good to merge once the build has passed
   * A comment by the reviewer indicating that they have reviewed the change and provided the build passes the change can be merged.
