@@ -85,7 +85,7 @@ Some practical examples
   The etymology of this is as follows: commit by commit --> blow by blow --> :blowfish: / :blowfish: --> :blowfish: --> :fish: and now anything that lives in the sea is fair game for commit-wise.
 
   Origins:
-    * https://github.com/dimagi/commcare-hq/pull/11073#issuecomment-205374720
+    * https://github.com/dimagi/commcare-hq/pull/8938#issuecomment-153969885
     * https://github.com/dimagi/commcare-hq/pull/11073#issuecomment-205374720
 
 * :office: : Pull request should be reviewed as a whole (not by commit).
