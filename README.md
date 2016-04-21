@@ -77,3 +77,9 @@ Some practical examples
 - Asking the author to write tests that would require bootstrapping an entire test framework should not be a blocker unless the code is absolutely mission-critical (and if it is mission-critical code it likely already has a test framework).
 - Asking the author to rename a poorly-named function is a reasonable blocker, though can typically be addressed in a follow up PR
 - Cleanup like converting a tuple to a namedtuple should likely not be a blocker
+
+## Comment Conventions
+* :fish: (any kind of fish) : Pull request can be reviewed commit by commit.
+  * Often for larger changes it is easier to review the changes one commit at a time rather then the entire change set. This allows the reviewer to better follow the flow of the change and also spearate related changes from unrelated change.
+* :white_check_mark: on :+1: : Good to merge once the build has passed
+  * A comment by the reviewer indicating that they have reviewed the change and provided the build passes the change can be merged.
