@@ -81,6 +81,13 @@ Some practical examples
 ## Comment Conventions
 * :fish: (any kind of fish) : Pull request can be reviewed commit by commit.
   * Often for larger changes it is easier to review the changes one commit at a time rather then the entire change set. This allows the reviewer to better follow the flow of the change and also spearate related changes from unrelated change.
+  
+  The etymology of this is as follows: commit by commit --> blow by blow --> :blowfish: / :blowfish: --> :blowfish: --> :fish: and now anything that lives in the sea is fair game for commit-wise.
+
+  Origins:
+    * https://github.com/dimagi/commcare-hq/pull/11073#issuecomment-205374720
+    * https://github.com/dimagi/commcare-hq/pull/11073#issuecomment-205374720
+
 * :office: : Pull request should be reviewed as a whole (not by commit).
   * This usually indicates that the author of the changes wasn't able to keep the changes logically separated into commits and that reviewing commit by commit won't be helpful (or that the change is small enough to not matter).
 * :+1: on :white_check_mark: : Good to merge once the build has passed
