@@ -2,7 +2,7 @@
 
 This is Dimagi's code review philosophy.
 
-##Goals
+## Goals
 
 The goals of code review include:
 
