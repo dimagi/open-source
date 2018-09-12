@@ -45,9 +45,35 @@ https://github.com/dimagi/commcare-hq/pull/20874
 * Pull requests should be discrete.  That is, they should cover one topic.
 * If you can split up a series of changes into multiple PRs, consider doing so.
 * Feature additions which are somewhat independent of the original scope of the
-  PR should be PR'd separately into the main PR.
-    * tip: Make a PR against the main branch, then if the main PR is merged
-      first, switch the "base branch" to _master_
+  PR should be PR'd separately into the main PR.  More on this below:
+
+### Very large changes that can't be merged in smaller chunks
+
+Sometimes you'll build a large new feature or refactor that needs to be merged
+all in one go.  First consider whether you can safely develop behind a feature
+flag, allowing you to merge regularly into master.
+
+In practice, this often starts out with a relatively clean PR, but then comes a
+lot of back-and-forth on small changes, and meanwhile, you're working on other
+aspects of that feature, so you push those changes too, and before you know it,
+the PR has 3000 lines changed and is 200 commits long.  Now no one can review
+it except as a whole, but it's impossible to do so meaningfully.
+
+Instead, make child PRs for each non-trivial addition. Here's a recent example
+where I did this: https://github.com/dimagi/commcare-hq/pull/21092
+
+1. Make a PR with the primary changes and begin the review process.
+1. As you finish associated features, open those as separate PRs with the base
+   branch as your main feature branch.
+1. At some point, you'll need to stop adding commits directly to the main
+   branch.  Do this before merging any child PRs, or after reviewers have
+   signed off on the main PR.  The reviewers should no longer need to review
+   the main PR at all.
+1. Once all the necessary child branches have been approved and merged into the
+   main branch, you can merge that in at a time where you'll be able to monitor
+   its rollout.
+1. If you have straggler child PRs that aren't blocking, you can merge the main
+   PR anyways, and switch the base branch of those child PRs to `master`
 
 
 # Clean git histories, or "How to pretend you don't make mistakes"
