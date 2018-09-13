@@ -86,7 +86,9 @@ where I did this: https://github.com/dimagi/commcare-hq/pull/21092
     * Move functions around, then refactor them in a separate commit.
     * If a PR has substantial linting, do that in a separate commit, possibly a
       separate commit for each kind of lint
-* Fixup little "oops" commits, they're distracting
+* Fixup little "oops" commits, they're distracting. Use
+  [`rebase.autosquash`](https://robots.thoughtbot.com/autosquashing-git-commits)
+  to streamline this process.
 * Squash comments together with the relevant code
     * Jenny: "When working, I often do a pass at the end adding comments and
       then fixup-ing them into other commits"
