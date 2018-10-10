@@ -28,6 +28,7 @@ help give context to the reader:
 * Spend a time proportionate to the size of the PR writing a description and/or notes.
     * Cory: "If you worked for a week on something it's probably good to spend
       hours explaining it in the PR"
+    * On the other hand, small PRs usually still need background. What seems like a minor bug or configuration change to you may be a mystery to a reviewer who isn't embedded in your project.
 * Cory: "For complex code I like to do the first review myself, where I walk
   through the whole PR and make comments on anything I see that is not obvious /
   jumps out. Good to do this while the code is still fresh in your mind and will
