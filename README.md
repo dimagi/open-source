@@ -20,7 +20,7 @@ At a very high level, the code review process should go as follows:
 
 - Author submits code to be reviewed and pings reviewer(s)
 - Reviewers review the code and leave feedback for the author
-- When the reviewers are satisfied with the changes, they merge the code
+- Once a reviewer has marked the PR approved, the author can merge the code.
 
 In general, the onus is on the author to convince the reviewer that the changes are acceptable. However, the onus is on the reviewer to ensure that the changes requested are reasonable. 
 
@@ -31,6 +31,8 @@ In extremely rare circumstances where the author and reviewer cannot reach conse
 Reviewing code is hard, and as the author of code you should try your best to make the code as easy to review as possible. Here are some tips for doing that:
 
 Read the page on [Writing PRs](https://github.com/dimagi/code-review/blob/es/writing-prs/Writing_PRs.md)
+
+Also look at Google's guide to [getting through code reviews](https://google.github.io/eng-practices/review/developer/)
 
 ### Responding to feedback
 
@@ -53,6 +55,8 @@ The author likely put a lot of work into the code that they wrote. As such it is
 - When making comments, it’s very helpful to say whether you expect the comment to be addressed before merge (a “blocker”) or not
 - For any “blockers” make sure that you communicate (respectfully) why they are blockers (see below).
 - If you don’t feel like you have enough context to understand and merge the change, don’t hesitate to ask for an additional reviewer who has more context.
+
+Also look at Google's guide to [how to do a code review](https://google.github.io/eng-practices/review/reviewer/)
 
 ### Blockers
 
