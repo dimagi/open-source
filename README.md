@@ -26,7 +26,7 @@ In general, the onus is on the author to convince the reviewer that the changes 
 
 In extremely rare circumstances where the author and reviewer cannot reach consensus, the review can be escalated, however this should be done in only the most extreme circumstances and should never be necessary if both the author and the reviewer are following the advice below.
 
-Aim to review PRs within one business day, but use your judgement as to when to break this guideline. Common considerations:
+Aim to submit your first review of a PR within one business day of the PR's creation, and to also submit subsequent reviews within a day of changes being made. Use your judgement as to when to break this guideline. Common considerations:
 - Size: this turnaround is only possible when PRs are small enough that reviewing is a relatively short task.
 - Time zones: if the author is finishing their workday soon and you have the capacity to review before that, you can potentially save days of back-and-forth communication.
 - If you're deep into a long-term task and don't want to interrupt your focus to review, consider asking the author if the review can wait a few days, or if they can add another reviewer.
