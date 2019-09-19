@@ -22,9 +22,15 @@ At a very high level, the code review process should go as follows:
 - Reviewers review the code and leave feedback for the author
 - Once a reviewer has marked the PR approved, the author can merge the code.
 
-In general, the onus is on the author to convince the reviewer that the changes are acceptable. However, the onus is on the reviewer to ensure that the changes requested are reasonable. 
+In general, the onus is on the author to convince the reviewer that the changes are acceptable. However, the onus is on the reviewer to ensure that the changes requested are reasonable.
 
 In extremely rare circumstances where the author and reviewer cannot reach consensus, the review can be escalated, however this should be done in only the most extreme circumstances and should never be necessary if both the author and the reviewer are following the advice below.
+
+Aim to review PRs within one business day, but use your judgement as to when to break this guideline. Common considerations:
+- Size: this turnaround is only possible when PRs are small enough that reviewing is a relatively short task.
+- Time zones: if the author is finishing their workday soon and you have the capacity to review before that, you can potentially save days of back-and-forth communication.
+- If you're deep into a long-term task and don't want to interrupt your focus to review, consider asking the author if the review can wait a few days, or if they can add another reviewer.
+- As the author, it behooves you to communicate if (and why) your PR is urgent. It can also be a courtesy to indicate when a PR is low priority or is waiting on things besides review (business signoff, QA, etc).
 
 ## As the author
 
@@ -32,7 +38,7 @@ Reviewing code is hard, and as the author of code you should try your best to ma
 
 Read the page on [Writing PRs](https://github.com/dimagi/code-review/blob/es/writing-prs/Writing_PRs.md)
 
-Also look at Google's guide to [getting through code reviews](https://google.github.io/eng-practices/review/developer/)
+We largely follow Google's guide to [getting through code reviews](https://google.github.io/eng-practices/review/developer/)
 
 ### Responding to feedback
 
@@ -56,7 +62,7 @@ The author likely put a lot of work into the code that they wrote. As such it is
 - For any “blockers” make sure that you communicate (respectfully) why they are blockers (see below).
 - If you don’t feel like you have enough context to understand and merge the change, don’t hesitate to ask for an additional reviewer who has more context.
 
-Also look at Google's guide to [how to do a code review](https://google.github.io/eng-practices/review/reviewer/)
+We largely follow Google's guide to [how to do a code review](https://google.github.io/eng-practices/review/reviewer/)
 
 ### Blockers
 
