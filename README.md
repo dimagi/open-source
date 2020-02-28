@@ -82,6 +82,10 @@ Some practical examples
 - Asking the author to rename a poorly-named function is a reasonable blocker, though can typically be addressed in a follow up PR
 - Cleanup like converting a tuple to a namedtuple should likely not be a blocker
 
+### Reviewing for Security
+
+Reviewers are accountable for ensuring that Pull Requests are free from defects which introduce new vulnerabilities into the codebase, and are expected to understand from best practices ([including the OWasp Top 10 Vulernability Risk Areas](https://owasp.org/www-project-top-ten/)) which types of code changes require additional scrutiny. Authors will be expected to provide sufficient confirmation that risks are mitigated as required by reviewers, and lack of clear evidence of harm should not be taken as evidence that risks have been addressed. 
+
 ## Comment Conventions
 * :fish: (any kind of fish) : Pull request can be reviewed commit by commit.
   * Often for larger changes it is easier to review the changes one commit at a time rather then the entire change set. This allows the reviewer to better follow the flow of the change and also spearate related changes from unrelated change.
