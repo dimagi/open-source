@@ -41,21 +41,6 @@ background that led to this change, so be sure to provide it for them.
 Here's an example that hits many of these points and is nicely formatted for reading:
 https://github.com/dimagi/commcare-hq/pull/20874
 
-# PR Labels
-
-PRs are labeled to help the product team sift through changes and decide what to communicate to different user audiences. Every PR must have one of the following product-related labels:
-* `product/invisible` Changes with no user-facing effects.
-* `product/admin` Changes that are only visible to internal superusers.
-* `product/feature-flag` Changes that are limited to projects with a particular feature flag turned on.
-* `product/custom` Changes that are limited to a single project, either because they're behind a feature flag marked "custom" or becuase they're limited to specific projects by a code mechanism (e.g., custom reports).
-* `product/all-users-all-environments` Changes that will be visible to all useres.
-* `product/prod-india-all-users` Changes that will be visible to all SaaS users, that is, all users except those on self-hosted instances of CommCare HQ.
-
-Other common PR labels:
-* `reindex/migration` The PR includes a data migration. Typically this is used for PRs that cause a couch reindex, cause an ElasticSearch reindex, or contain a django migration that runs a script likely to take 10+ minutes on production. See [docs](https://github.com/dimagi/commcare-hq/blob/master/docs/migrations.rst) for more on migrations.
-* `Open for reivew: do not merge` The PR should not be merged and only the PR's owner should merge it.
-* `Awaiting QA` / `QA passed` QA will happen or has happened.
-
 # What to PR
 
 * Pull requests should be discrete.  That is, they should cover one topic.
