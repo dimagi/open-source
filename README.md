@@ -1,9 +1,5 @@
 # Code Contributions and Review
 
-This is Dimagi's code review philosophy.
-
-## Goals
-
 The goals of code review include:
 
 - Reduce the introduction of defects
@@ -13,6 +9,14 @@ The goals of code review include:
 - Facilitate design discussions
 
 See also [Atlassian's nice writeup](https://www.atlassian.com/agile/code-reviews/).
+
+## PR review checklist
+* User input escaped / validated
+* Access control correctly applied
+* Exceptions handled appropriately
+* SQL generated using correct paramter subtitution and not string formatting
+* Appropriate unit tests included
+* New dependencies are reviewed for open CVEs
 
 ## Process
 
