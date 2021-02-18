@@ -1,9 +1,5 @@
 # Code Contributions and Review
 
-This is Dimagi's code review philosophy.
-
-## Goals
-
 The goals of code review include:
 
 - Reduce the introduction of defects
@@ -13,6 +9,44 @@ The goals of code review include:
 - Facilitate design discussions
 
 See also [Atlassian's nice writeup](https://www.atlassian.com/agile/code-reviews/).
+
+## PR review checklist
+
+#### Purposeful
+It does what it is supposed to without being over engineered or doing unnecessary things (YAGNI).
+
+#### Usable
+Features match the needs of the user / product. User interfaces are clear and usable, text is marked for translation.
+
+#### Validated
+Validations are used wherever necessary, especially user inputs which are sanitized when necessary.
+
+#### Errors are handled
+Errors (expected and unexpected) are handled appropriately. Errors that are returned to the user
+contian appropriate information.
+
+#### Follows architecture and patterns
+The code follows already established architecture and patterns. New architecture or patterns require
+additional review.
+
+#### Reliable
+Unit tests cover new and changed code.  Test verify the the normal case and edge cases / error scenarios.
+
+#### Reusable
+All functions serve a limited and clear purpose (follows DRY principle). Functions are reused wherever applicable and written in such a way that they can be re-used in the future.
+
+#### Performant & Scalable
+Performance is consistent with the intended useage. Where applicable the code is scalable and able to handle increasing amounts of data / requests.
+
+#### Secure
+The code is secure in terms of authentications (with encryption), injections, roles, unauthorized access, directory browsing, SQL injection, cross-side scripting, etc. It follows the [OWASP 10 security principles](https://owasp.org/www-project-top-ten/).
+
+#### Manageable & Maintainable
+The code is readable, commented and easy to manage. Methods are not too big to manage and they don't exceed readable size. Documentation is created
+or updated where necessary.
+
+#### Meets coding conventions and standards
+The code follows the coding conventions and standards and is consistent with the existing application code.
 
 ## Process
 
