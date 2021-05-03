@@ -1,6 +1,6 @@
-==========================
+===========================
 Contributing to the Project
-==========================
+===========================
 
 This project is primarily developed by `Dimagi`_, but we welcome contributions.
 

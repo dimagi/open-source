@@ -6,4 +6,3 @@ Inside you will find
 
 * [Documentation](./docs) describing our approach to Open Source development, including Code Review standards
 * [Documentation Templates](./templates) for individual project repositories
-* [Github Templates](./.github) for project repository config files to bootstrap PR / Issues, etc.
