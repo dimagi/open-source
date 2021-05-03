@@ -50,9 +50,6 @@ Common Expectations for no-op PR's
 - The changeset will not meaningfully change system behavior
 - Sufficient evidence is present to ensure that system behavior hasn't changed based on the scope of changes, ideally through reproducible tests
 
-Common No-op Categories
------------------------
-
 **Refactoring**
     Restructure code to improve quality or comprehensibility without changing the function of the code
   
