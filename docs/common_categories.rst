@@ -52,9 +52,16 @@ Common Expectations for no-op PR's
 
 Common No-op Categories
 -----------------------
-- **Refactoring** - Restructure code to improve quality or comprehensibility without changing the function of the code
- - Expectation: The approach to code refactor is outlined and justified
-- **Performance** - Improve the runtime speed or resource utilization of existing code without changing its function
- - Expectation: The magnitutde and real-world value of this improvement should be described in the Pull Request and the impact should be compatible with the scope of the change
-- **Documentation** - Updates to docs about the code or about the system function in the codebase
 
+**Refactoring**
+    Restructure code to improve quality or comprehensibility without changing the function of the code
+  
+    - Expectation: The approach to code refactor is outlined and justified
+ 
+**Performance**
+    Improve the runtime speed or resource utilization of existing code without changing its function
+  
+    - Expectation: The magnitutde and real-world value of this improvement should be described in the Pull Request and the impact should be compatible with the scope of the change
+ 
+**Documentation**
+    Updates to docs about the code or about the system function in the codebase
