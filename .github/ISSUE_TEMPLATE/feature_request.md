@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 **Abstract**
-A short overview of your proposal
+A short overview of your proposed changes
 
 **Motivation**
 Clearly explain the motivation for this feature / change and what problems or challenges it addresses.
@@ -17,3 +17,5 @@ Describe in as much detail as necessary the proposed changes, linking in any add
 
 **Architecture considerations**
 Outline any major changes or impacts to the project that will result from this change, including new considerations for security or quality assurance
+
+If any significant decisions or tradeoffs are relevant to this change, the outcomes should be described here along with the options considered and rational for the final decision 
