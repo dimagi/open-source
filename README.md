@@ -4,5 +4,5 @@ This repository is the home for the Standard and Practices for Open Source proje
 
 Inside you will find
 
-* [Documentation](./docs) describing our approach to Open Source development, including Code Review standards
+* [Documentation](./docs) describing our approach to Open Source development, including code review standards
 * [Project Structure Templates](./templates) for setting up individual project repositories
