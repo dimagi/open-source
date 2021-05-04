@@ -18,8 +18,8 @@ Examples:
 - Changes for external API compatibility
 - Remove reliance on deprecated functionality
 
-Bug Fixes
-~~~~~~~~~
+Bug Fix
+~~~~~~~
 Correct an error or out-of-spec behavior 
 
 Expectations:
@@ -27,8 +27,8 @@ Expectations:
 - The triggering condition for the error should be articulated through the PR, ideally through a replication test
 - Any new behaviors should be described in full, ideally through a replication test, with explanations for the reasoning
 
-Procedural
-~~~~~~~~~~
+Process
+~~~~~~~
 A PR which is used as part of a defined process defined by the project such as deployment. 
 
 Reviewers are responsible for ensuring that the PR is compliant with the project process.
@@ -50,7 +50,7 @@ Common Expectations for no-op PR's
 - The changeset will not meaningfully change system behavior
 - Sufficient evidence is present to ensure that system behavior hasn't changed based on the scope of changes, ideally through reproducible tests
 
-**Refactoring**
+**Refactor**
     Restructure code to improve quality or comprehensibility without changing the function of the code
   
     - Expectation: The approach to code refactor is outlined and justified
