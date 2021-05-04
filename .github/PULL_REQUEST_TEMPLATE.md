@@ -17,7 +17,7 @@ Note: These are not generic labels, your PR must meet the criteria laid out by t
 https://github.com/dimagi/code-review/blob/master/docs/common_categories.rst
 -->
 
-- [ ] (Modernization)[https://github.com/ctsims/code-review/blob/master/docs/common_categories.rst#modernization]
+- [ ] Modernization
 - [ ] Bug Fix
 - [ ] Process
 - [ ] Refactor
