@@ -1,10 +1,19 @@
+---
+name: Common Changeset
+about: Propose a structured common change to the project
+title: "[common] title"
+labels: 
+assignees: ''
+
+---
+
 ## Summary
 <!--
     Provide a link to the ticket or document which prompted this change,
     Describe the rationale and design decisions.
 -->
 
-## Common Category
+## Changeset Category
 
 <!--
 If your PR fits into a streamlined PR category, please note it here
