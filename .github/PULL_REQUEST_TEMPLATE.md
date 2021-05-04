@@ -1,9 +1,7 @@
----
-
 ## Summary
 <!--
-    Provide a link to the ticket or document which prompted this change,
     Describe the rationale and design decisions.
+    Provide a link to the ticket or document which prompted this change,
 -->
 
 ## Changeset Category
