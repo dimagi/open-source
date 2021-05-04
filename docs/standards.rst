@@ -17,8 +17,6 @@ Security
 ========
 Our project baseline security practices should be based on the latest recommendations from the Open Web Security Project (OWASP), which provides practical and evidence based standards for software implementers. If there is a question in approach on system design and OWASP has a stated position on the best approach, it should be expected that the OWASP sanctioned approach will be adopted.
 
-In addition, the project follows the following specific security practices.
-
 Security Protocols and Cryptography Implementation
 --------------------------------------------------
 
