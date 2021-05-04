@@ -1,11 +1,4 @@
 ---
-name: Common Changeset
-about: Propose a structured common change to the project
-title: "[common] title"
-labels: 
-assignees: ''
-
----
 
 ## Summary
 <!--
@@ -16,13 +9,15 @@ assignees: ''
 ## Changeset Category
 
 <!--
-If your PR fits into a streamlined PR category, please note it here
+Is this change structured into a streamlined review category? If so, specify below
 
-Note: These are not generic labels, your PR must meet the criteria laid out:
+
+Note: These are not generic labels, your PR must meet the criteria laid out by the project for structured review.
+
 https://github.com/dimagi/code-review/blob/master/docs/common_categories.rst
 -->
 
-- [ ] Modernization
+- [ ] (Modernization)[https://github.com/ctsims/code-review/blob/master/docs/common_categories.rst#modernization]
 - [ ] Bug Fix
 - [ ] Process
 - [ ] Refactor
