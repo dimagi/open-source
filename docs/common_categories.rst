@@ -2,11 +2,11 @@
 Common Category Contributions
 =============================
 
-Although many code conributions to projects are made as the result of changes requiring extensive planning and documentation, many instead come from much more limited scopes. A developer fixing a small bug or writing a new test case has less to communicate along with their PR.
+Although many code contributions to projects are made as the result of changes requiring extensive planning and documentation, many will instead come with more limited background. A developer fixing a small bug or writing a new test case often has less to communicate along with their PR to articulate the intent and scope of the change.
 
-To ensure that developers are able to make such contributions efficiently while retaining quality, common categories of changes have been outlined which can benefit from streamlined implementation and review. PR's that meet the criteria for a Common Category can be tagged to save time describing structure and intent, and are more efficient for review.
+To ensure that developers are able to make such contributions efficiently while retaining quality, common categories of changes have been outlined which can benefit from streamlined implementation and review. PR's that meet the criteria for a common category can be tagged to save time describing structure and intent, and are more efficient for review.
 
-Our general Common Categories are described below, along with expectations that should be met by PR's tagged as such, and any expected criteria for review. In general it is a core expectation is that a Common Category contribution is as narrowly as possible, containing only the changes necessary and fulfilling the intent. A large PR which requires refactoring, bug fixing, and a functional change will be much more easily reviewed if separated into three contributions, two of which can be streamlined.
+Our general common contribution categories are described below, along with expectations that should be met by PR's tagged as such, and any expected criteria for review. A core expectation is that such contributions are made as narrow as possible, containing only the changes necessary and conforming to the intent of the category. A large PR which requires refactoring, bug fixing, and a detailed functional change will be much more easily reviewed if separated into three contributions, two of which can be streamlined.
 
 Modernization
 ~~~~~~~~~~~~~
