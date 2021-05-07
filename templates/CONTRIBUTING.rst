@@ -42,6 +42,6 @@ Pull requests will be subjected to automated testing through a Continuous Integr
 Reviewers are resonsible for ensuring that changes do not introduce defects with basic coding standards, performance issues, security concerns, maintainability, and dependency/configuration management of the codebase. If the scope of a changeset poses risks in these areas, those risks will need to be mitigated in the PR through additional testing, documentation, QA, analysis, etc. 
 
 .. _Dimagi: https://www.dimagi.com/
-.. _Code Review Process: https://github.com/dimagi/code-review/blob/master/README.md
-.. _Common Category: https://github.com/dimagi/code-review/blob/master/common_category.md
-.. _Guide to Authoring Pull Requests: https://github.com/dimagi/code-review/blob/master/Writing_PRs.md
+.. _Code Review Process: https://github.com/dimagi/open-source/blob/master/README.md
+.. _Common Category: https://github.com/dimagi/open-source/blob/master/common_category.md
+.. _Guide to Authoring Pull Requests: https://github.com/dimagi/open-source/blob/master/Writing_PRs.md
