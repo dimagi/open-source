@@ -41,7 +41,7 @@ Expectations:
 No-Ops
 ~~~~~~
 
-The following "no-op" categories are for changes which improve the systems underlying structure without affecting its function.
+The following "no-op" categories are for changes which improve the system's underlying structure without affecting its function.
 
 Reviewers should verify that the changeset both does not impact the code, that the reasoning for the change matches the implementation, and that the outcome is aligned with the project standards and objectives
 
