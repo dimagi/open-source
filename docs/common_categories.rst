@@ -29,7 +29,7 @@ Expectations:
 
 Process
 ~~~~~~~
-A PR which is used as part of a defined process defined by the project such as deployment. 
+A PR which is made as part of a structured process defined by the project, like a version bump during deployment.
 
 Reviewers are responsible for ensuring that the PR is compliant with the project process.
 
