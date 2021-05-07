@@ -10,7 +10,7 @@ Is this change structured into a streamlined review category? If so, specify bel
 
 Note: These are not generic labels, your PR must meet the criteria laid out by the project for structured review.
 
-https://github.com/dimagi/code-review/blob/master/docs/common_categories.rst
+https://github.com/dimagi/open-source/blob/master/docs/common_categories.rst
 -->
 
 This PR is streamlined for review in the following category
