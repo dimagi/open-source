@@ -43,12 +43,12 @@ No-Ops
 
 The following "no-op" categories are for changes which improve the system's underlying structure without affecting its function.
 
-Reviewers should verify that the changeset both does not impact the code, that the reasoning for the change matches the implementation, and that the outcome is aligned with the project standards and objectives
+Reviewers should verify that the changeset both does not impact the functional output of the system, that the reasoning for the change matches the implementation, and that the outcome is aligned with the project standards and objectives
 
 Common Expectations for no-op PR's
 
 - The changeset will not meaningfully change system behavior
-- Sufficient evidence is present to ensure that system behavior hasn't changed based on the scope of changes, ideally through reproducible tests
+- Sufficient evidence is present to ensure that system behavior hasn't changed based on the scope of changes, ideally through reproducible automated tests
 
 **Refactor**
     Restructure code to improve quality or comprehensibility without changing the function of the code
