@@ -58,7 +58,7 @@ Common Expectations for no-op PR's
 **Performance**
     Improve the runtime speed or resource utilization of existing code without changing its function
   
-    - Expectation: The magnitutde and real-world value of this improvement should be described in the Pull Request and the impact should be compatible with the scope of the change
+    - Expectation: The magnitude and real-world value of this improvement should be described in the Pull Request and the impact should be compatible with the scope of the change
  
 **Documentation**
     Updates to docs about the code or about the system function in the codebase
