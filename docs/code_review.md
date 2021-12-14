@@ -52,7 +52,7 @@ The code follows the coding conventions and standards and is consistent with the
 
 At a very high level, the code review process should go as follows:
 
-- Author submits code to be reviewed and pings reviewer(s)
+- Author submits code to be reviewed and pings reviewer(s). Reviewers may also be automatically added if the repository has a [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) file.
 - Reviewers review the code and leave feedback for the author
 - Once a reviewer has marked the PR approved, the author can merge the code.
 
