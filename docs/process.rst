@@ -13,7 +13,11 @@ We use templates for a mix of applying guiderails to the submission process, as 
 Labels
 ^^^^^^
 
-The main Dimagi repos require PRs to be labeled for the sake of internal process. This is enforced by the `label-bot <https://github.com/dimagi/label-bot>`_, which will mark your PR as failing a check if it is unlabeled. A member with write access will label your PR.
+Many of our repos require PRs to be labeled for the sake of internal process, with the labels themselves being specific to the contribution process for each repository. 
+
+Label adherence is enforced by the `label-bot <https://github.com/dimagi/label-bot>`_, which will mark your PR as failing a check if it is unlabeled. 
+
+If you do not have core committing access, a member with write access will label your PR based on the code changed, your PR overview, and any other factors that come up during review.
 
 Code Review
 ^^^^^^^^^^^
