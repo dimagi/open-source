@@ -6,7 +6,9 @@ This document contains guidance on internal processes that are commonly part of 
 PR Template
 ^^^^^^^^^^^
 
-Depending on the repository, your PR may be populated with a structured template. Most of this is oriented around clearly communicating the change being made and accounting for risks in the change.
+Depending on the repository, your PR may be populated with a structured template, or in some cases you may have a choice of templates to apply. 
+
+We use templates for a mix of applying guiderails to the submission process, as well as ensuring that the structure of changes is clearly communicated including risks and how they are accounted for.
 
 Labels
 ^^^^^^
