@@ -1,7 +1,7 @@
 Code Release Process
 ^^^^^^^^^^^^^^^^^^^^
 
-This document contains guidance on internal processes that can be relevant when submitting code, in particular to the `commcare-hq <https://github.com/dimagi/commcare-hq/>`_ repository.
+This document contains guidance on internal processes that are commonly part of code submission and review in our Open Source repositories.
 
 PR Template
 ^^^^^^^^^^^
