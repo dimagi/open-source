@@ -22,6 +22,6 @@ On the commercial side, it’s common for organizations to adopt OSS methodology
 
 This is an intentional tradeoff towards the goal of responsibly building technology targeting ambitious, global scale impact with limited resources. We see the encoded model of maintenance and deployment as a core part of the value of what we build. In our model it wouldn’t be a responsible use of our limited resources to facilitate the wide variety of potential ways that our tech can be used and deployed, and don’t encourage organizations to adopt our technology value proposition in part. But all the same, we release our code under permissive open licenses because there’s nothing in the world we like more than to be proven wrong. 
 
-## We embrace a diversity of approaches
+## We also embrace a diversity of other approaches
 
 Our goal in producing this outline is to communicate how we see open source from the lens of our most prominent projects, because that approach isn’t commonly encountered, but it isn’t universal to our work. Dimagi’s team has many touchpoints with open source software, from participating as contributors to other OSS tools like Ansible or Django to establishing new community modeled open source tools where that’s appropriate. 
