@@ -118,19 +118,4 @@ Some practical examples
 
 ### Reviewing for Security
 
-Reviewers are accountable for ensuring that Pull Requests are free from defects which introduce new vulnerabilities into the codebase, and are expected to understand from best practices ([including the OWasp Top 10 Vulernability Risk Areas](https://owasp.org/www-project-top-ten/)) which types of code changes require additional scrutiny. Authors will be expected to provide sufficient confirmation that risks are mitigated as required by reviewers, and lack of clear evidence of harm should not be taken as evidence that risks have been addressed. 
-
-## Comment Conventions
-* :fish: (any kind of fish) : Pull request can be reviewed commit by commit.
-  * Often for larger changes it is easier to review the changes one commit at a time rather then the entire change set. This allows the reviewer to better follow the flow of the change and also spearate related changes from unrelated change.
-  
-  The etymology of this is as follows: commit by commit --> blow by blow --> :blowfish: / :blowfish: --> :blowfish: --> :fish: and now anything that lives in the sea is fair game for commit-wise.
-
-  Origins:
-    * https://github.com/dimagi/commcare-hq/pull/8938#issuecomment-153969885
-    * https://github.com/dimagi/commcare-hq/pull/11073#issuecomment-205374720
-
-* :office: : Pull request should be reviewed as a whole (not by commit).
-  * This usually indicates that the author of the changes wasn't able to keep the changes logically separated into commits and that reviewing commit by commit won't be helpful (or that the change is small enough to not matter).
-* :+1: on :white_check_mark: : Good to merge once the build has passed
-  * A comment by the reviewer indicating that they have reviewed the change and provided the build passes the change can be merged.
+Reviewers are accountable for ensuring that Pull Requests are free from defects which introduce new vulnerabilities into the codebase, and are expected to understand from best practices ([including the OWasp Top 10 Vulernability Risk Areas](https://owasp.org/www-project-top-ten/)) which types of code changes require additional scrutiny. Authors will be expected to provide sufficient confirmation that risks are mitigated as required by reviewers, and lack of clear evidence of harm should not be taken as evidence that risks have been addressed.
