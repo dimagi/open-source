@@ -88,12 +88,12 @@ Here are some guidelines for authors responding to feedback during code review.
 
 The author likely put a lot of work into the code that they wrote. As such it is very important to always be respectful and collaborative in your suggestions and also be very respectful of the author’s time. Here are some tips for reviewers:
 
-- Use the checklist.
-- Always keep the focus on the code, not the author
-- Always be respectful. Don’t “talk down” to the author or or use any emotional language in discussing code.
+- Use [the checklist](#pr-review-checklist).
+- Always keep the focus on the code, not the author.
+- Always be respectful. Don’t “talk down” to the author or use any emotional language in discussing code.
 - Don’t assume that you have complete context of the change. When in doubt, ask questions before jumping to conclusions.
-- When making comments, it’s very helpful to say whether you expect the comment to be addressed before merge (a “blocker”) or not
-- For any “blockers” make sure that you communicate (respectfully) why they are blockers (see below).
+- When making comments, it’s very helpful to say whether you expect the comment to be addressed before merge (a “blocker”) or not.
+- For any “blockers” make sure that you communicate (respectfully) why they are blockers (see [below](#blockers)).
 - If you don’t feel like you have enough context to understand and merge the change, don’t hesitate to ask for an additional reviewer who has more context.
 
 We largely follow Google's guide to [how to do a code review](https://google.github.io/eng-practices/review/reviewer/)
