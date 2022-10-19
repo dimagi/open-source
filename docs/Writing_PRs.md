@@ -17,7 +17,8 @@ help give context to the reader:
 
 * External links - JIRA tickets, trello cards, error logs, or spec docs are helpful, but 
   don't assume future readers of the PR will have access to those links. Consider reiterating information 
-  from an external link in the description if especially useful.
+  from an external link in the description if especially useful. However, keep in mind that internal or sensitive 
+  information, like specific project information, does not belong in PRs.
 * Screenshots - anything user-facing should include a screenshot. Make sure you
   know the keyboard shortcut to copy a portion of your screen to the clipboard
   so you can paste it directly in github.
