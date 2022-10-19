@@ -15,7 +15,10 @@ want to know what it concerns.
 Describe what the PR accomplishes at a high-level, including anything that would
 help give context to the reader:
 
-* Links to the fogbugz ticket, trello card, error log, or spec doc
+* External links - JIRA tickets, trello cards, error logs, or spec docs are helpful, but 
+  don't assume future readers of the PR will have access to those links. Consider reiterating information 
+  from an external link in the description if especially useful. However, keep in mind that internal or sensitive 
+  information, like specific project information, does not belong in PRs.
 * Screenshots - anything user-facing should include a screenshot. Make sure you
   know the keyboard shortcut to copy a portion of your screen to the clipboard
   so you can paste it directly in github.
@@ -24,16 +27,14 @@ help give context to the reader:
     - Windows: Windows+Shift+S or "Snipping Tool"
 * Information about the scope of the change - what does this affect?
 * Tips for reviewers, such as suggesting they read commit-by-commit or view
-  something with whitespace ignored
+  something with whitespace ignored.
 * Spend a time proportionate to the size of the PR writing a description and/or notes.
-    * Cory: "If you worked for a week on something it's probably good to spend
-      hours explaining it in the PR"
-    * On the other hand, small PRs usually still need background. What seems like a minor bug or configuration change to you may be a mystery to a reviewer who isn't embedded in your project.
-* Cory: "For complex code I like to do the first review myself, where I walk
-  through the whole PR and make comments on anything I see that is not obvious /
-  jumps out. Good to do this while the code is still fresh in your mind and will
-  make things easier for the reviewer. Also in this process think about whether
-  a code comment makes more sense than a PR comment and add them."
+    * "If you worked for a week on something it's probably good to spend
+      hours explaining it in the PR" - Cory
+    * On the other hand, small PRs usually still need background. What seems like a minor bug
+      or configuration change to you may be a mystery to a reviewer who isn't embedded in your project.
+* For complex PRs, approach the PR as a reviewer, adding comments to anything that requires further explanation. 
+  As you make comments, think about whether a code comment makes more sense than a PR comment and add accordingly.
 
 Remember that people _will_ come across this PR with no understanding of the
 background that led to this change, so be sure to provide it for them.
@@ -56,12 +57,11 @@ flag, allowing you to merge regularly into master.
 
 In practice, this often starts out with a relatively clean PR, but then comes a
 lot of back-and-forth on small changes, and meanwhile, you're working on other
-aspects of that feature, so you push those changes too, and before you know it,
+aspects of that feature, so you push those changes too. Before you know it,
 the PR has 3000 lines changed and is 200 commits long.  Now no one can review
 it except as a whole, but it's impossible to do so meaningfully.
 
-Instead, make child PRs for each non-trivial addition. Here's a recent example
-where I did this: https://github.com/dimagi/commcare-hq/pull/21092
+Instead, make child PRs for each non-trivial addition. Here's an example: https://github.com/dimagi/commcare-hq/pull/21092
 
 1. Make a PR with the primary changes and begin the review process.
 1. As you finish associated features, open those as separate PRs with the base
@@ -79,26 +79,26 @@ where I did this: https://github.com/dimagi/commcare-hq/pull/21092
 
 # Clean git histories, or "How to pretend you don't make mistakes"
 
-* Before opening PR, organize commits into reviewable chunks
+* Before opening a PR, organize commits into reviewable chunks
 * Try very hard to do mechanical changes in separate commits from thoughtful
   changes, and make it clear which is which. Don't make reviewers play "spot
   the differences".
     * Rename a file, then refactor it in a separate commit.
     * Move functions around, then refactor them in a separate commit.
     * If a PR has substantial linting, do that in a separate commit, possibly a
-      separate commit for each kind of lint
+      separate commit for each kind of lint.
 * Fixup little "oops" commits, they're distracting. Use
   [`rebase.autosquash`](https://robots.thoughtbot.com/autosquashing-git-commits)
   to streamline this process.
 * Squash comments together with the relevant code
-    * Jenny: "When working, I often do a pass at the end adding comments and
-      then fixup-ing them into other commits"
+    * "I often do a pass at the end adding comments and
+      then fixup-ing them into other commits" - Jenny
 * Use verbose, sometimes multi-line commit messages
 * Lint on your own, before you PR.
 * Once people have begun reviewing the PR, refrain from messing with the commit history.
 * It's fine to have a few one-or-two-line commits **after the PR is opened** for
   linting and nitpicky feedback, these are quick to review
-* Larger restructuring should be cleanly committed
+* Larger restructuring should be cleanly committed.
 
 
 # Git training wheels and safety nets
@@ -185,7 +185,7 @@ Note that the without `missingCommitsCheck = error`, this says
 ```
 
 
-# Iteractive Rebasing
+# Interactive Rebasing
 
 ```bash
 $ git rebase -i origin/master
