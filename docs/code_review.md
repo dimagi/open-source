@@ -23,7 +23,7 @@ Validations are used wherever necessary, especially user inputs which are saniti
 
 #### Errors are handled
 Errors (expected and unexpected) are handled appropriately. Errors that are returned to the user
-contian appropriate information.
+contain appropriate information.
 
 #### Follows architecture and patterns
 The code follows already established architecture and patterns. New architecture or patterns require
