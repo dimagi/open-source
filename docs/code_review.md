@@ -16,14 +16,14 @@ See also [Atlassian's nice writeup](https://www.atlassian.com/agile/code-reviews
 It does what it is supposed to without being over engineered or doing unnecessary things (YAGNI).
 
 #### Usable
-Features match the needs of the user / product. User interfaces are clear and usable, text is marked for translation.
+Features match the needs of the user / product. User interfaces are clear and usable, text is marked for translation. User-facing language is proofread, with as little jargon as possible and no internal language. Dates and times are displayed in the user's time zone. Navigation is consistent. UI elements are semantic (e.g., destructive actions use danger/error stylings).
 
 #### Validated
 Validations are used wherever necessary, especially user inputs which are sanitized when necessary.
 
 #### Errors are handled
 Errors (expected and unexpected) are handled appropriately. Errors that are returned to the user
-contain appropriate information.
+contain appropriate information. Potentially long-running requests, including all ajax requests, are indicated to the user with a spinner or similar signal.
 
 #### Follows architecture and patterns
 The code follows already established architecture and patterns. New architecture or patterns require
