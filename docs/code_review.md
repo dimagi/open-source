@@ -52,7 +52,14 @@ The code follows the coding conventions and standards and is consistent with the
 
 At a very high level, the code review process should go as follows:
 
-- Author submits code to be reviewed and pings reviewer(s). Reviewers may also be automatically added if the repository has a [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) file.
+- Author creates a PR in Draft mode with their proposed code and platforms changes with appropriate documentaiton
+- Author performs their own initial review of the changeset confirming that it meets expectations and various checks, including potentially:
+  - Notifying specific individuals to perform initital review if there are existing questions on code, design, or their approach to the change
+  - Triggering QA or staging testing to confirm the changes
+  - Cleaning up initial feedback from continous delivery checks 
+- When the changes are ready, the Author moves the PR out of draft and pings reviewer(s). Reviewers may also be automatically added if the repository has a [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) file.
+  - A non-draft PR should be fully reviewable both in code and in the clarity / structure of changes. If reviewers are unable to discern the intent or approach of a PR outside of its code, they may reflect this by shifting it back into a draft until it is clearly reviewable.
+  - PR's can be created directly out-of-draft if they are complete upfront (like very small changes), but it's generally recommended to create in draft mode first for an author to perform their own initial pre-review and sanity check before reviewers are notified
 - Reviewers review the code and leave feedback for the author
 - Once a reviewer has marked the PR approved, the author can merge the code.
 
@@ -60,7 +67,7 @@ In general, the onus is on the author to convince the reviewer that the changes 
 
 In extremely rare circumstances where the author and reviewer cannot reach consensus, the review can be escalated, however this should be done in only the most extreme circumstances and should never be necessary if both the author and the reviewer are following the advice below.
 
-Aim to submit your first review of a PR within one business day of the PR's creation, and to also submit subsequent reviews within a day of changes being made. Use your judgement as to when to break this guideline. Common considerations:
+Aim to submit your first review of a PR within one business day of the request, and to also submit subsequent reviews within a day of changes being made. Use your judgement as to when to break this guideline. Common considerations:
 - Size: this turnaround is only possible when PRs are small enough that reviewing is a relatively short task.
 - Time zones: if the author is finishing their workday soon and you have the capacity to review before that, you can potentially save days of back-and-forth communication.
 - If you're deep into a long-term task and don't want to interrupt your focus to review, consider asking the author if the review can wait a few days, or if they can add another reviewer.
