@@ -66,11 +66,3 @@ This document provides CommCare Mobile specific best practices that are to be fo
 
 
 In addition to above code standards, any contributions are required to follow [the due process to write a pull request](https://github.com/dimagi/open-source/blob/master/docs/Writing_PRs.md)
-
-
-
-
-
-
-
-
