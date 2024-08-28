@@ -9,9 +9,14 @@ This document provides CommCare Mobile specific best practices that are to be fo
 ### Code Style and Readability
 
 - Code should be easy to read, understand, and maintain.
-- Meaningful variable and method names should be used.
+- Meaningful variable and method names should be used. Variables should generally follow camel case except for static constants which should follow the `STATIC_CONSTANT` pattern
 - Code should be formatted as per the [code style settings](https://github.com/dimagi/commcare-android/?tab=readme-ov-file#code-style-settings).
 - Code should pass the coding standards set by the [checkstyle config](https://github.com/dimagi/commcare-android/blob/master/.github/linters/checkstyle.xml)
+- All subcontexts should be braced, even one-liners  (if {})
+- keyword expressions with arguments should be separated by a space (if (), not if())
+- Braced expressions should begin a newline after opening brace, and before and after the close brace
+- Typecasts should be adjacent to the value being cast: (int)value
+- To improve code readability, newly added code should limit size of Classes under 500 lines and size of methods under 50 lines
 
 ### Modularity and Resusability
 
@@ -26,6 +31,14 @@ This document provides CommCare Mobile specific best practices that are to be fo
 
 - Proper error-handling mechanisms should be implemented (e.g., try-catch blocks, exception handling).
 - Errors should be logged appropriately for debugging purposes.
+- Don't include exceptions that extend `RuntimeException` in method signatures (as in "throws StorageFullException"). The compiler provides no static guarantees on runtime exceptions. Recoverable runtime exceptions should be documented in the javadoc (as in "@throws StorageFullException reason/how to recover").
+
+### Logging
+
+- `System.out` should be avoided.
+- `Logger.log` statements logs are submitted back to HQ. These should be for top level events that help us get a feel for what's going on on the phone, as well as any unexpected states that the app gets into. For Ex. Beginning unsent data submission: N forms to be submitted" or "Unexpected cache miss for recently serialized records".
+- `Logger.log` messages are persisted so it is important to be judicious when deciding to use logger.log. Log events should occur with a frequency that is bounded by user events (login, sync, form entry start, etc), not looping or machine driven. For instance "Migrated 512 cases", not "Migrating case 23 of 512"
+- Always include as much context as possible. "Error - Invalid date for parsing" is much less helpful than "Error - Invalid date for parsing: 'January 2015'"
 
 ### Java-Specific Criteria:
 
