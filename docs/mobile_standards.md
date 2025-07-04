@@ -32,6 +32,7 @@ This document provides CommCare Mobile specific best practices that are to be fo
 - Proper error-handling mechanisms should be implemented (e.g., try-catch blocks, exception handling).
 - Errors should be logged appropriately for debugging purposes.
 - Don't include exceptions that extend `RuntimeException` in method signatures (as in "throws StorageFullException"). The compiler provides no static guarantees on runtime exceptions. Recoverable runtime exceptions should be documented in the javadoc (as in "@throws StorageFullException reason/how to recover").
+- [Look at over extended exception handling approach](https://github.com/dimagi/open-source/blob/master/docs/mobile_exception_handling.md)
 
 ### Logging
 
