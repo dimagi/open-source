@@ -18,6 +18,16 @@ This document provides CommCare Mobile specific best practices that are to be fo
 - Typecasts should be adjacent to the value being cast: (int)value
 - To improve code readability, newly added code should limit size of Classes under 500 lines and size of methods under 50 lines
 
+### Fail First instead of Defensive Programming 
+
+- Write code that fails fast and visibly when assumptions are violated, instead of defensively hiding errors or trying to continue execution in an invalid state. Fail-first code is easier to debug, test, and maintain. It prevents silent failures, unclear app states, and hard-to-reproduce bugs.
+
+- Validate early and loudly: Use require(), check(), or explicit exception throws to assert invariants or impossible states. Example: `requireNotNull(user.id) { "User ID must not be null" }`
+
+- Avoid silent fallbacks: Don’t catch exceptions only to log or ignore them. Let them propagate unless recovery is truly possible.[Look at over extended exception handling approach for more details](https://github.com/dimagi/open-source/blob/master/docs/mobile_exception_handling.md)
+
+In short: “Crash early, fix quickly, and handle gracefully where it matters.”
+
 ### Modularity and Resusability
 
 - Code should be modular, with a clear separation of concerns, reusable components (e.g., utility classes, helper functions) should be identified and utilized.
