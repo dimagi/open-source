@@ -18,7 +18,7 @@ This document provides CommCare Mobile specific best practices that are to be fo
 - Typecasts should be adjacent to the value being cast: (int)value
 - To improve code readability, newly added code should limit size of Classes under 500 lines and size of methods under 50 lines
 
-### Fail First instead of Defensive Programming 
+### Fail First instead of programming defensively
 
 - Write code that fails fast and visibly when assumptions are violated, instead of defensively hiding errors or trying to continue execution in an invalid state. Fail-first code is easier to debug, test, and maintain. It prevents silent failures, unclear app states, and hard-to-reproduce bugs.
 
