@@ -23,6 +23,7 @@ To ensure the safety and consistentcy of this project any contributions will be 
 
 Before submitting a PR, review our `Guide to Authoring Pull Requests`_.  
 
+If you use AI Agents to support your coding, please review our `AI Contribution Guidelines`_.
 
 Structure
 ---------
@@ -45,3 +46,4 @@ Reviewers are resonsible for ensuring that changes do not introduce defects with
 .. _Code Review Process: https://github.com/dimagi/open-source/blob/master/README.md
 .. _Common Category: https://github.com/dimagi/open-source/blob/master/common_category.md
 .. _Guide to Authoring Pull Requests: https://github.com/dimagi/open-source/blob/master/Writing_PRs.md
+.. _AI Contribution Guidelines: https://github.com/dimagi/open-source/blob/master/docs/ai_contribution_guidelines.md
