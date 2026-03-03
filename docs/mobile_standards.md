@@ -61,7 +61,7 @@ In short: â€œCrash early, fix quickly, and handle gracefully where it matters.â€
 
 - Nullable types are handled appropriately with safe calls and nullability checks.
 - Use of Kotlin's built-in null safety features where necessary.
-- Change Java files to Kotlin when Java kotlin interncompability introduces un-necessary and significant booilerplate code. 
+- Change Java files to Kotlin when Java-Kotlin intercompatibility introduces unnecessary and significant boilerplate code. 
 
 ### Async Processing
 
