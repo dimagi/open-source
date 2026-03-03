@@ -61,6 +61,40 @@ In short: â€œCrash early, fix quickly, and handle gracefully where it matters.â€
 
 - Nullable types are handled appropriately with safe calls and nullability checks.
 - Use of Kotlin's built-in null safety features where necessary.
+- Change Java files to Kotlin when Java kotlin interncompability introduces un-necessary and significant booilerplate code. 
+
+### Async Processing
+
+- **Prefer Kotlin Coroutines** for asynchronous work and background processing.
+  - Use structured concurrency (`viewModelScope`, `lifecycleScope`, etc.).
+  - Explicitly specify dispatchers (`Dispatchers.IO`, `Dispatchers.Default`) instead of relying on defaults.
+  - Ensure proper cancellation handling to avoid memory leaks.
+
+- **Use Android WorkManager** for:
+  - Deferrable background work
+  - Periodic tasks
+  - Guaranteed execution (even after process death)
+  - Tasks that require constraints (network, charging, etc.)
+
+- **Avoid `AsyncTask`.**
+  - `AsyncTask` is deprecated.
+  - It should only remain in legacy code that has not yet been refactored.
+  - Do not introduce new usages of `AsyncTask` unless working with existing code structure.
+
+- **Avoid introducing arbitrary async models into the codebase** to minimize:
+  - Inconsistent threading patterns
+  - Hard-to-debug race conditions
+  - Lifecycle leaks
+  - Increased cognitive load for contributors
+
+- **Do not mix concurrency paradigms unnecessarily** (e.g., raw threads, executors, RxJava, coroutines) unless:
+  - There is a strong architectural reason
+  - The choice is documented clearly in code
+
+- **UI Thread Safety**
+  - Never block the main thread.
+  - All long-running or IO-bound operations must be moved off the UI thread.
+  - UI updates must occur on the main thread.
 
 ### Testing Criteria:
 
