@@ -61,7 +61,11 @@ In short: â€œCrash early, fix quickly, and handle gracefully where it matters.â€
 
 - Nullable types are handled appropriately with safe calls and nullability checks.
 - Use of Kotlin's built-in null safety features where necessary.
-- Change Java files to Kotlin when Java-Kotlin intercompatibility introduces unnecessary and significant boilerplate code. 
+- Change Java files to Kotlin when Java-Kotlin intercompatibility introduces unnecessary and significant boilerplate code.
+
+### Mobile Data Storage
+
+- [Sqlite vs Shared Preferences](https://github.com/dimagi/open-source/blob/master/docs/mobile_storage_standards.md)
 
 ### Async Processing
 
