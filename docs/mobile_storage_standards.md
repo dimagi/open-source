@@ -10,7 +10,7 @@ Small, simple key-value data such as:
 * Last sync timestamp
 * Selected language
 * User settings
-* Small primitive user state
+* Small primitive user state like number of times a user has been shown a specific prompt or reminder
 
 **Best when:**
 
@@ -32,6 +32,7 @@ Structured, growing, or queryable data such as:
 * Offline business data
 * Queues / retries
 * Parent-child relationships
+* Data from Server APIs (generally structured persistent data)
 
 **Best when:**
 
@@ -56,13 +57,12 @@ Structured, growing, or queryable data such as:
 
 ## Avoid
 
-* Large JSON blobs in Shared Preferences
+* Using Shared Preferences for non-volatile data that might need backward compatibility or migrations across app versions
 * Using SQLite for isolated flags or intermediate properties
-* Complex structured data in Shared Preferences
 
 ---
 
 ## Team Principle
 
-**If data is state → Shared Preferences**
-**If data is records → SQLite**
+* If data is state → Shared Preferences
+* If data is records → SQLite**
