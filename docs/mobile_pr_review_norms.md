@@ -49,7 +49,7 @@ These came up repeatedly in our PRs and the team agreed they're fair game regard
 - **Repeated or inline logic** — copy-pasted blocks or complex lambdas that deserve a named method
 - **Duplicate utilities** — if something already exists in the codebase, point it out
 - **Null safety (`!!`)** — we use the fail-fast approach; removing `!!` without discussion should be flagged
-- **TODO hygiene** — every TODO needs either a Jira ticket reference or a sentence explaining the deferral
+- **TODO hygiene** — every TODO needs a sentence explaining the deferral or a Jira ticket as a comment on the PR itself (avoid putting Jira ticket in the code)
 - **strings.xml discipline** — only user-visible strings belong there
 
 ---
