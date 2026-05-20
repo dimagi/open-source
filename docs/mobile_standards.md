@@ -115,4 +115,4 @@ In short: â€œCrash early, fix quickly, and handle gracefully where it matters.â€
 - Redundant or outdated comments should be avoided as that can lead to confusion.
 
 
-In addition to above code standards, any contributions are required to follow [the due process to write a pull request](https://github.com/dimagi/open-source/blob/master/docs/Writing_PRs.md)
+In addition to above code standards, any contributions are required to follow [the due process to write a pull request](https://github.com/dimagi/open-source/blob/master/docs/Writing_PRs.md) and PR reviews are expected to follow [these norms](https://github.com/dimagi/open-source/blob/master/docs/mobile_pr_review_norms.md)
