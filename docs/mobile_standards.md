@@ -63,6 +63,25 @@ In short: â€œCrash early, fix quickly, and handle gracefully where it matters.â€
 - Use of Kotlin's built-in null safety features where necessary.
 - Change Java files to Kotlin when Java-Kotlin intercompatibility introduces unnecessary and significant boilerplate code.
 
+### Color Resources (colors.xml)
+
+- When adding a new color in `colors.xml`, define a base color named for the color itself (its hue or shade, e.g. `lavender_mist`, `slate_gray`), then define the feature/usage-specific color as a reference to that base color.
+- Feature/usage colors should be named for where/how the color is used (e.g. `secondary_cta_btn_background`) and must reference a base color rather than a raw hex value. This keeps the palette reusable across features and decouples semantic usage from raw hex values.
+- Example:
+  ```xml
+  <color name="lavender_mist">#D8D9F4</color>
+  <color name="secondary_cta_btn_background">@color/lavender_mist</color>
+  ```
+- Before adding a new base color, check `colors.xml` for an existing entry with the same hex value and reuse it instead of duplicating.
+- When a color is used as part of a reusable UI element's styling, reference it from a style in `styles.xml` rather than setting it inline on the element (see [Styles](#styles-stylesxml)).
+
+### Styles (styles.xml)
+
+- When a new UI element (button, card, etc.) is created with specific styling requirements that need to be reused across the app, define a dedicated style for it in `styles.xml` rather than repeating attributes inline on each element.
+- Apply the style to the element via `style="@style/YourStyleName"` so visual changes can be made in one place and stay consistent everywhere the element is used.
+- Reference colors within styles using the named entries from `colors.xml` (e.g. `@color/secondary_cta_btn_background`) rather than raw hex values (see [Color Resources](#color-resources-colorsxml)).
+- For reference, see an existing reusable style in `styles.xml` (e.g. `CustomSecondaryCtaButtonStyle`).
+
 ### Mobile Data Storage
 
 - [Sqlite vs Shared Preferences](https://github.com/dimagi/open-source/blob/master/docs/mobile_storage_standards.md)
