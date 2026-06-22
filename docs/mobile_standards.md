@@ -73,13 +73,13 @@ In short: â€œCrash early, fix quickly, and handle gracefully where it matters.â€
   <color name="secondary_cta_btn_background">@color/lavender_mist</color>
   ```
 - Before adding a new base color, check `colors.xml` for an existing entry with the same hex value and reuse it instead of duplicating.
-- When a color is used as part of a reusable UI element's styling, reference it from a style in `styles.xml` rather than setting it inline on the element (see [Styles](#styles-stylesxml)).
+- When a color is used as part of a reusable UI element's styling, reference it from a style in `styles.xml` rather than setting it inline on the element (see [Styles](https://github.com/dimagi/commcare-android/blob/e7b31c0671a4fabb62f56da540ae6f033753b983/app/res/values/styles.xml#L231)).
 
 ### Styles (styles.xml)
 
 - When a new UI element (button, card, etc.) is created with specific styling requirements that need to be reused across the app, define a dedicated style for it in `styles.xml` rather than repeating attributes inline on each element.
 - Apply the style to the element via `style="@style/YourStyleName"` so visual changes can be made in one place and stay consistent everywhere the element is used.
-- Reference colors within styles using the named entries from `colors.xml` (e.g. `@color/secondary_cta_btn_background`) rather than raw hex values (see [Color Resources](#color-resources-colorsxml)).
+- Reference colors within styles using the named entries from `colors.xml` (e.g. `@color/secondary_cta_btn_background`) rather than raw hex values (see [Color Resources](https://github.com/dimagi/commcare-android/blob/e7b31c0671a4fabb62f56da540ae6f033753b983/app/res/values/colors.xml#L203)).
 - For reference, see an existing reusable style in `styles.xml` (e.g. `CustomSecondaryCtaButtonStyle`).
 
 ### Mobile Data Storage
