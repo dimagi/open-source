@@ -63,6 +63,68 @@ In short: “Crash early, fix quickly, and handle gracefully where it matters.�
 - Use of Kotlin's built-in null safety features where necessary.
 - Change Java files to Kotlin when Java-Kotlin intercompatibility introduces unnecessary and significant boilerplate code.
 
+### Color, Theme, and Style Resources
+
+Color resources are organized in three layers, each with a single responsibility. This keeps the palette reusable, centralizes design decisions, and makes multi-theme support (e.g. light/dark mode) a matter of swapping one mapping rather than editing layouts.
+
+| Layer | File | Contains | References |
+|-------|------|----------|------------|
+| 1. Palette | `colors.xml` | Base colors only — named by hue/shade | Raw hex (nothing) |
+| 2. Semantic roles (named by purpose, e.g. `colorCtaBackground`) | `themes.xml` | Color *roles* — named for their UI purpose, not their hue — mapped to a base color per theme, so the same role resolves to a different color when the theme switches (e.g. light/dark) | `@color/...` (base colors) |
+| 3. Reusable styling | `styles.xml` | Reusable element styles | `?attr/...` roles (or `@color/...` for theme-invariant colors) |
+
+**The core rule:** for any color that could differ between themes, layouts and styles must reference a semantic role (`?attr/colorRole`) rather than a base color (`@color/...`) directly — so changing a role's mapping in `themes.xml` propagates everywhere. Theme-invariant colors may reference a base color directly, but never a raw hex value.
+
+#### Base Colors (colors.xml)
+
+- `colors.xml` contains **base colors only** — named for the color itself (its hue or shade, e.g. `lavender_mist`, `slate_gray`), holding a raw hex value.
+- **Never** define feature/usage-specific colors here (e.g. `secondary_cta_btn_background` does not belong in `colors.xml`).
+- Before adding a new base color, check `colors.xml` for an existing entry with the same hex value and reuse it instead of duplicating.
+- Example:
+  ```xml
+  <color name="lavender_mist">#D8D9F4</color>
+  <color name="deep_lavender">#3A3B7A</color>
+  ```
+
+#### Semantic Color Roles (themes.xml)
+
+- Map base colors to semantic **color roles** in `themes.xml`, defined once per theme (e.g. `Theme.CommCare.Light`, `Theme.CommCare.Dark`).
+- **Prefer Material Components' built-in role attributes** wherever one fits: `colorPrimary`, `colorSecondary`, `colorSurface`, `colorOnSurface`, `colorError`, `colorOnPrimary`, etc. Standard widgets pick these up automatically and get light/dark theming for free.
+- **Only when no built-in role fits**, declare a custom attribute in `attrs.xml` and map it in each theme. Name custom attributes by *role*, prefixed with `color…` (e.g. `colorCtaBackground`) — never by hue.
+- Example:
+  ```xml
+  <!-- attrs.xml — custom role, only when no built-in fits -->
+  <attr name="colorCtaBackground" format="color"/>
+
+  <!-- themes.xml — Theme.CommCare.Light -->
+  <item name="colorSecondary">@color/lavender_mist</item>       <!-- built-in role -->
+  <item name="colorCtaBackground">@color/lavender_mist</item>   <!-- custom fallback -->
+
+  <!-- themes.xml — Theme.CommCare.Dark: same roles, different base colors -->
+  <item name="colorSecondary">@color/deep_lavender</item>
+  <item name="colorCtaBackground">@color/deep_lavender</item>
+  ```
+- Dark mode then requires **zero layout/style changes** — only a second theme mapping.
+
+#### Styles (styles.xml)
+
+- When a new UI element (button, card, etc.) is created with specific styling requirements that need to be reused across the app, define a dedicated style for it in `styles.xml` rather than repeating attributes inline on each element.
+- Apply the style to the element via `style="@style/YourStyleName"` so visual changes can be made in one place and stay consistent everywhere the element is used.
+- **Choosing between a role and a base color in a style:**
+  - Reference a semantic role (`?attr/colorRole`) when the color is themable — it may differ between light/dark themes, or the same role is reused across components. Define these in `themes.xml`.
+  - Referencing a base color directly (`@color/lavender_mist`) is acceptable for theme-invariant or minor, localized colors where defining a theme attribute would add unnecessary overhead.
+  - Do not use raw hex values in a style — always reference a named base color from `colors.xml` so it remains the single source of truth for color values.
+- Example:
+  ```xml
+  <style name="CustomSecondaryCtaButtonStyle">
+      <!-- themable / reused across components: use a role -->
+      <item name="android:background">?attr/colorCtaBackground</item>
+      <!-- theme-invariant, minor one-off: a base color is fine -->
+      <item name="android:shadowColor">@color/lavender_mist</item>
+  </style>
+  ```
+- For reference, see an existing reusable style in [`styles.xml`](https://github.com/dimagi/commcare-android/blob/e7b31c0671a4fabb62f56da540ae6f033753b983/app/res/values/styles.xml#L231) (e.g. `CustomSecondaryCtaButtonStyle`).
+
 ### Mobile Data Storage
 
 - [Sqlite vs Shared Preferences](https://github.com/dimagi/open-source/blob/master/docs/mobile_storage_standards.md)
